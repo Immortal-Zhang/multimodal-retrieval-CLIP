@@ -1,6 +1,6 @@
 # multimodal-retrieval-project
 
-一个面向实习求职展示的双向图文检索原型项目。项目围绕 **CIFAR-10 小规模图文对 + OpenCLIP 向量编码 + 双向检索 + Recall@K 评测 + Gradio 演示** 展开，重点展示你是否真正理解了多模态检索的完整流程。
+一个面向实习求职展示的双向图文检索原型项目。项目围绕 **CIFAR-10 小规模图文对 + OpenCLIP 向量编码 + 双向检索 + Recall@K 评测 + Gradio 演示** 展开。
 
 ## 项目亮点
 
@@ -44,7 +44,7 @@ multimodal-retrieval-project/
 pip install -r requirements.txt
 ```
 
-如果你需要近似最近邻索引，可以额外安装：
+如果需要近似最近邻索引，可以额外安装：
 
 ```bash
 pip install faiss-cpu
@@ -68,24 +68,6 @@ python search_text_to_image.py --query "一只猫 cat" --topk 5
 python search_image_to_text.py --image-path "data/images/cat_0000.png" --topk 5
 python evaluate_recall.py --k-values 1 5 10
 python query_expansion_demo.py --query "猫咪"
-python app.py
-```
-
-## 如果你已经在旧版目录里跑过脚本
-
-为了避免重复下载与重复编码，可以把旧目录里已经生成的文件复制到本项目下：
-
-- `data/images/`
-- `data/captions.csv`
-- `artifacts/embeddings.npz`
-- `artifacts/metadata.json`
-- `artifacts/image_faiss.index`
-- `artifacts/text_faiss.index`
-
-复制完成后，你可以直接运行：
-
-```bash
-python search_text_to_image.py --query "一只猫 cat" --topk 5
 python app.py
 ```
 
@@ -113,26 +95,7 @@ python app.py
 - Text → Image：使用同类别命中作为 Recall@K 标准
 - Image → Text：使用一一对齐的 exact match 作为基线评测方式
 
-## 上传 GitHub 时建议保留什么
-
-建议上传：
-
-- 全部 `.py` 源码
-- `README.md`
-- `FILE_GUIDE.md`
-- `PROJECT_RELEASE_NOTES.md`
-- `requirements.txt`
-- `docs/project_report.md`
-- `.gitignore`
-
-建议不要上传：
-
-- `data/images/` 里的全部图片
-- `data/captions.csv`
-- `artifacts/embeddings.npz`
-- `artifacts/metadata.json`
-- `artifacts/*.index`
 
 ## 项目定位
 
-这是一个 **小规模多模态检索原型项目**。它的重点是展示你是否理解并实现了完整的图文检索链路，而不是追求工业级数据规模或底层训练能力。
+这是一个 **小规模多模态检索原型项目**。它的重点是展示是否理解并实现了完整的图文检索链路，而不是追求工业级数据规模或底层训练能力。

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+
+data/cifar_cache/
+data/images/*
+!data/images/.gitkeep
+data/captions.csv
+
+artifacts/*.npz
+artifacts/*.json
+artifacts/*.index
+artifacts/*.txt
+!artifacts/.gitkeep

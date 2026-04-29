@@ -1,6 +1,6 @@
 # multimodal-retrieval-project
 
-一个面向实习求职展示的双向图文检索原型项目。项目围绕 **CIFAR-10 小规模图文对 + OpenCLIP 向量编码 + 双向检索 + Recall@K 评测 + Gradio 演示** 展开。
+项目围绕 **CIFAR-10 小规模图文对 + OpenCLIP 向量编码 + 双向检索 + Recall@K 评测 + Gradio 演示** 展开，重点展示多模态检索的完整流程。
 
 ## 项目亮点
 
@@ -95,7 +95,11 @@ python app.py
 - Text → Image：使用同类别命中作为 Recall@K 标准
 - Image → Text：使用一一对齐的 exact match 作为基线评测方式
 
+## Demo
+
+<img src="assets/text_to_image.png" width="700">
+<img src="assets/image_to_text.png" width="700">
 
 ## 项目定位
 
-这是一个 **小规模多模态检索原型项目**。它的重点是展示是否理解并实现了完整的图文检索链路，而不是追求工业级数据规模或底层训练能力。
+这是一个 **小规模多模态检索原型项目**。它的重点是展示是否理解并实现了完整的图文检索链。

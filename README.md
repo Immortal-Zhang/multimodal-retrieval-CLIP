@@ -15,7 +15,7 @@
 ## 目录结构
 
 ```text
-multimodal-retrieval-project/
+multimodal-retrieval-CLIP/
   README.md
   FILE_GUIDE.md
   PROJECT_RELEASE_NOTES.md

@@ -1,4 +1,4 @@
-# multimodal-retrieval-project
+# 基于 OpenCLIP 的双向图文检索原型
 
 项目围绕 **CIFAR-10 小规模图文对 + OpenCLIP 向量编码 + 双向检索 + Recall@K 评测 + Gradio 演示** 展开，重点展示多模态检索的完整流程。
 

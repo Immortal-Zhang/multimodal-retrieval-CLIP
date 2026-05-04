@@ -106,12 +106,12 @@ python evaluate_recall.py --k-values 1 5 10
 ```
 
 结果：
-Text -> Image 的 Recall@1 = 1.0000
-Image -> Text 的 Exact Recall@1 = 0.0450
-Text -> Image 的 Recall@5 = 1.0000
-Image -> Text 的 Exact Recall@5 = 0.2000
-Text -> Image 的 Recall@10 = 1.0000
-Image -> Text 的 Exact Recall@10 = 0.4450
+- Text -> Image 的 Recall@1 = 1.0000
+- Image -> Text 的 Exact Recall@1 = 0.0450
+- Text -> Image 的 Recall@5 = 1.0000
+- Image -> Text 的 Exact Recall@5 = 0.2000
+- Text -> Image 的 Recall@10 = 1.0000
+- Image -> Text 的 Exact Recall@10 = 0.4450
 
 ## Demo
 
